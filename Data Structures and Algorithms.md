@@ -286,6 +286,7 @@ std::map<std::string, std::string> m;
 
 // Insert
 m.insert(std::pair<std::string, std::string>("key", "value"));
+m.insert({0, 42}); // new C++11 way to do it
 
 // Access by key
 std::string value = m.at("key");
